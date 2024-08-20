@@ -76,7 +76,7 @@ html, body {
 
 .producto {
     display: flex;
-    background: lightblue;
+    background: #add8e6;
     color: #38598b;
     margin-top: 2px;
     margin-bottom: 7px;
@@ -90,7 +90,12 @@ html, body {
 }
 
 .producto span {
-    flex: 1;
+    flex: 2;
+}
+
+.producto strong {
+    flex: 0.1;
+    font-weight: 200;
 }
 
 .producto p {
