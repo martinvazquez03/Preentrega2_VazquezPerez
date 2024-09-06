@@ -4,45 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/metal-mania" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/ebea2b51aa.js" crossorigin="anonymous"></script>
     <title>Preentrega 2</title>
 </head>
 <body>
     
+    <header>
+        <img class="logo" src="img/logo.jpeg" alt="">
+        <h1>Rock - n' - Shop</h1>
+        <img class="bandas" src="img/guitarra.png" alt="">
+    </header>
 
     <div class="main-container">
-        <div class="main-container-carrito">
-            <div class="tu-carrito">
-                <h2>Tu carrito</h2>
-            </div>
-
-            <div class="cuerpo-carrito">
-                <div class="compras-carrito">
-                    <h3>Productos</h3>
-                    <div id="carrito-vacio">
-                        Tu carrito esta vacio 😒
-                    </div>
-    
-                    <div id="agregados-carrito">
-                        <!-- se rellena desde el js -->
-                    </div>
-    
-                    <div class="total-carrito">
-                        <!-- se rellena desde el js -->
-                    </div>
-                </div>
-
-                <div class="recomendaciones-carrito">
-                    <h6>Productos recomendados</h6>
-                    <!-- esto se rellena desde el js -->
-                </div>
-            </div>
+        <div class="contenedor-producto-detail">
+            <!-- se rellena desde el js -->
         </div>
+
+        <section class="carrito-blur mostrar-carrito">
+            <div class="main-container-carrito">
+                <div class="tu-carrito">
+                    Tu carrito
+                </div>
+    
+                <div class="cuerpo-carrito">
+                    <div class="compras-carrito">
+                        <h3>Productos</h3>
+                        <div id="carrito-vacio">
+                            Tu carrito esta vacio 😠
+                        </div>
+        
+                        <div id="agregados-carrito">
+                            <!-- se rellena desde el js -->
+                        </div>
+        
+                        <div class="total-carrito">
+                            <!-- se rellena desde el js -->
+                        </div>
+                    </div>
+    
+                    <div class="recomendaciones-carrito">
+                        <h6>Productos recomendados</h6>
+                        <!-- esto se rellena desde el js -->
+                    </div>
+                    <button class="boton-comprar"><a>Comprar</a></button>
+                    <button class="boton-cerrar"><a>Cerrar</a></button>
+                </div>
+            </div>
+        </section>
+
+        <button class="abrir-carrito"><i><i class="fa-solid fa-cart-shopping"></i></i></button>
+        <footer>
+            <h2>Rock n' shop - </h2><i class="fa-regular fa-copyright"></i>
+        </footer>
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="preentrega3_VazquezPerez.js"></script>
+    <script src="proyecto_final_VazquezPerez.js"></script>
 </body>
 </html>

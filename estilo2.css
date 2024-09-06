@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.contenedor-producto-detail {
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.producto-detail {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, .8) 0px 0px 7px;
+    height: 300px;
+    padding: 10px;
+}
+
+.producto-detail-footer {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    padding: 4px 7px;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+}

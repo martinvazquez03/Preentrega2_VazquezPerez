@@ -1,0 +1,51 @@
+[
+    {
+        "id": "rem-hermetica",
+        "img": "img/remera-hermetica.jpg",
+        "nombre": "Remera 'Hermetica' - (Regular-fit)",
+        "precio": 24000,
+        "stock": 200
+    },
+    {
+        "id": "rem-helloween",
+        "img": "img/remera-helloween.jpg",
+        "nombre": "Remera 'Helloween' - (Slim-fit)",
+        "precio": 22000,
+        "stock": 150
+    },
+    {
+        "id": "rem-pantera",
+        "img": "img/remera-pantera.jpg",
+        "nombre": "Remera 'Pantera' - (Regular-fit)",
+        "precio": 27000,
+        "stock": 240
+    },
+    {
+        "id": "rem-iron-maiden",
+        "img": "img/remera-iron-maiden.webp",
+        "nombre": "Remera 'Iron-Maiden' - (Skinny-fit)",
+        "precio": 25000,
+        "stock": 210
+    },
+    {
+        "id": "rem-korn",
+        "img": "img/remera-korn.webp",
+        "nombre": "Remera 'Korn' - (Baggy-fit)",
+        "precio": 29000,
+        "stock": 219
+    },
+    {
+        "id": "rem-tool",
+        "img": "img/remera-tool.webp",
+        "nombre": "Remera 'Tool' - (Baggy-fit)",
+        "precio": 21000,
+        "stock": 2
+    },
+    {
+        "id": "rem-black-sabbath",
+        "img": "img/remera-black-sabbath.webp",
+        "nombre": "Remera 'Black-Sabbath' - (Baggy-fit)",
+        "precio": 30000,
+        "stock": 139
+    }
+]
