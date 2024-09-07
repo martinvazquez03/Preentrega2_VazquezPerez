@@ -212,36 +212,47 @@ boton_abrir.addEventListener("click", () =>{
 })
 
 boton_comprar.addEventListener("click", () =>{
-    Swal.fire({
-        title: "Pasar a pagar.",
-        text: "Por favor ingrese su informacion de contacto, a la brevedad nos pondremos en contacto con usted para que pueda efectuar el pago.",
-        inputLabel: "Numero de celular",
-        input: "number",
-        inputValidator: (value) => {
-            if (!value) {
-            return "No puedes dejar este campo vacio!";
+    if (carrito.length === 0){
+        Swal.fire({
+            icon: "error",
+            title: "Carrito vacio.",
+            text: "Tiene que agregar al menos un elemento para proceder con la compra.",
+            showCloseButton : true,
+            showConfirmButton: false,
+        })
+    }else{
+        Swal.fire({
+            title: "Pasar a pagar.",
+            text: "Por favor ingrese su informacion de contacto, a la brevedad nos pondremos en contacto con usted para que pueda efectuar el pago.",
+            inputLabel: "Numero de celular",
+            input: "number",
+            inputValidator: (value) => {
+                if (!value) {
+                return "No puedes dejar este campo vacio!";
+                }
+            },
+            color: "#222222;",
+            showConfirmButton : true,
+            confirmButtonText: "Comprar",
+            showDenyButton: true,
+            denyButtonText: "cancelar",
+            position : "center"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Perfecto!",
+                    text: "Su informacion ha sido ingresada con exito! Nos pondremos en contacto lo antes posible.",
+                    icon: "success" ,
+                    color: "#222222;",
+                    showConfirmButton : false,
+                    footer: "Gracias por visitar nuestro sitio!",
+                    showCloseButton: true,
+                    position : "center"
+                })
+                carrito.length = 0;
+                checkeo_carrito()
             }
-        },
-        color: "#222222;",
-        showConfirmButton : true,
-        confirmButtonText: "Comprar",
-        showDenyButton: true,
-        denyButtonText: "cancelar",
-        position : "center"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            Swal.fire({
-                title: "Perfecto!",
-                text: "Su informacion ha sido ingresada con exito! Nos pondremos en contacto lo antes posible.",
-                icon: "success" ,
-                color: "#222222;",
-                showConfirmButton : false,
-                footer: "Gracias por visitar nuestro sitio!",
-                showCloseButton: true,
-                position : "center"
-            })
-            carrito.length = 0;
-            checkeo_carrito()
-        }
-    })
+        })
+    }
 })
+
